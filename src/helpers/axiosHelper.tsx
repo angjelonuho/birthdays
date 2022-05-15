@@ -18,7 +18,6 @@ axiosInstance.interceptors.request.use(
 
 axios.interceptors.response.use(
     (response) => {
-        console.log(response)
         return Promise.resolve(response)
     },
     (error) => {
